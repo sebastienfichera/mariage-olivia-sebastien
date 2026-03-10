@@ -448,6 +448,49 @@
         height: 1100px;
       }
     }
+	<!--
+	  .hero-leaf{
+	  position:absolute;
+	  width:320px;
+	  opacity:0.7;
+	  pointer-events:none;
+	}
+
+
+	.leaf-left{
+	  bottom:20px;
+	  left:0px;
+	  <!-- transform:rotate(-10deg); 
+	}
+
+	.leaf-right{
+	  top:20px;
+	  right:0px;
+	  <!-- transform:rotate(10deg); 
+	}
+	-->
+	.hero-leaf{
+	  position:absolute;
+	  pointer-events:none;
+	  user-select:none;
+	}
+
+	/* feuille en haut à droite */
+	.leaf-right{
+	  top:20px;
+	  right:0px;
+	  width:clamp(120px, 28vw, 320px);
+	  opacity:0.7;
+	}
+
+	/* feuille en bas à gauche */
+	.leaf-left{
+	  bottom:20px;
+	  left:0px;
+	  width:clamp(140px, 30vw, 320px);
+	  opacity:0.7;
+	}
+	
   </style>
 </head>
 <body>
@@ -467,8 +510,10 @@
   <header class="hero" id="annonce">
     <div class="container">
       <div class="hero-card">
+		<img src="images/leaf1.png" class="hero-leaf leaf-left" alt="">
+		<img src="images/leaf2.png" class="hero-leaf leaf-right" alt="">
         <div class="hero-content">
-          <div class="kicker"></div>
+          <div class="kicker">Vous êtes conviés au mariage d'</div>
           <h1>Olivia <span class="amp">&</span> Sébastien</h1>
           <p class="hero-subtitle">
             Nous avons l’immense joie de vous annoncer notre mariage
@@ -477,7 +522,7 @@
           <div class="date-pill">Samedi 29 mai 2027</div>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#rsvp">Répondre au RSVP</a>
+            <a class="btn btn-primary" href="#rsvp">Répondre</a>
             <a class="btn btn-secondary" href="#lieu">Voir le lieu</a>
           </div>
         </div>
@@ -582,7 +627,7 @@
             <div class="timeline-time">16h</div>
             <div>
               <strong>Réception au Domaine de Pont de Pany</strong><br />
-              Accueil des invités, moments partagés, repas et soirée.
+              Accueil des invités, photos, vin d'honneur, repas et soirée.
             </div>
           </div>
 
