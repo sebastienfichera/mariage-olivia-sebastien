@@ -782,9 +782,9 @@
         <p class="section-intro">
           N'hésitez pas à nous contacter si vous avez la moindre question.
         </p>
-        <div class="contact-placeholder">
-          Olivia : 07 85 59 99 54 | olivia.boulet@gmail.com <br/>
-		  Sébastien : 06 65 97 08 48 | sebastien.fichera@gmail.com
+		<div class="contact-placeholder">
+          olivia.boulet@gmail.com | 07 85 59 99 54<br/>
+		  sebastien.fichera@gmail.com | 06 65 97 08 48
         </div>
       </div>
     </section>
@@ -818,18 +818,23 @@
       const minutes = Math.floor((diff / (1000 * 60)) % 60);
       const seconds = Math.floor((diff / 1000) % 60);
 
+
       container.innerHTML = `
         <div class="count-item"><strong>${days}</strong><span>jours</span></div>
         <div class="count-item"><strong>${hours}</strong><span>heures</span></div>
         <div class="count-item"><strong>${minutes}</strong><span>minutes</span></div>
         <div class="count-item"><strong>${seconds}</strong><span>secondes</span></div>
       `;
+/*
+	  container.innerHTML = `
+        <div class="count-item"><strong>${days}</strong><span>jours</span><strong>${hours}</strong><span>heures</span><strong>${minutes}</strong><span>minutes</span><strong>${seconds}</strong><span>secondes</span></div>
+
+      `;
+*/
     }
 
     updateCountdown();
     setInterval(updateCountdown, 1000);
   </script>
 </body>
-
 </html>
-
